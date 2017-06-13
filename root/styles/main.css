@@ -1,0 +1,49 @@
+    body,
+    html {
+      height:100%;
+      min-height:100%;
+    }
+
+    .content-wrapper {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo {
+      text-align:center;
+    }
+    .logo svg {
+      width:90%;
+    }
+
+    .list {
+      list-style-type:none;
+      padding-left:13px;
+    }
+    .list a {
+      text-decoration:none;
+      font-family: 'Fugaz One', cursive;
+      font-size:25px;
+      color:#272727;
+      transition:all 700ms;
+      padding: 0 10px;
+      display:inline-block;
+    }
+
+    .list a:hover {
+      color:#fff;
+      background-color:#000;
+      transition:all 700ms;
+    }
+
+    .tag {
+      font-family:'Passion One', cursive;
+    }
+
+
+    @media (min-width: 480px) {
+      .list a  {
+        font-size:45px;
+      }
+    }
