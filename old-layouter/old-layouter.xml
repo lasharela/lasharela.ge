@@ -18,32 +18,16 @@
   
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" />
   <link rel="stylesheet" href="https://lasharela.github.io/myblogs/old-layouter/main.css" />
 </head>
 
 <body expr:class='&quot;loading&quot;  + data:blog.mobileClass +  &quot; &quot;  + data:blog.pageType'>
-  <b:section class='header' id='header'>
-    <b:widget id='Header1' locked='false' title='Awesome (Header)' type='Header'>
-      <b:includable id='main'>
-        <h1>
-          <b:include name='title' />
-        </h1>
-      </b:includable>
-      <b:includable id='description' />
-      <b:includable id='title'>
-        <b:if cond='data:blog.url == data:blog.homepageUrl'>
-          <data:title/>
-          <b:else/>
-          <a expr:href='data:blog.homepageUrl'>
-            <data:title/>
-          </a>
-        </b:if>
-      </b:includable>
-    </b:widget>
-  </b:section>
   <div class="row">
     <div class="col-md-4">
+      <div class="intro">
+        <h1>ძველი ლეიაუტერის ბლოგი</h1>
+      </div>
       <b:section class="navigation" id="navigation" />
     </div>
     <div class="col-md-8">
