@@ -1,6 +1,7 @@
+@import url("//cdn.web-fonts.ge/fonts/dejavu-sans-bold/css/dejavu-sans-bold.min.css");
+
 html {
     height: 100%;
-    background-color: #ccc;
 }
 
 body {
@@ -9,4 +10,9 @@ body {
     font-family: Palatino, 'Palatino Linotype', serif;
     box-sizing: border-box;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");
+}
+
+
+.intro h1 {
+    font-family: "DejaVu Sans Bold", sans-serif;
 }
