@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '../components/Section'
+import {FontAwesomeIcon as Icon} from '@fortawesome/react-fontawesome'
 
 export default () => {
     return (
@@ -14,17 +15,17 @@ export default () => {
                 <p className="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
                 <div className="social-icons">
                     <a href="#">
-                        <i className="fab fa-linkedin-in"></i>
+                        <Icon icon={["fab", "linkedin-in"]} />
                     </a>
                     <a href="#">
-                        <i className="fab fa-github"></i>
+                        <Icon icon={["fab", "github"]} />
                     </a>
                     <a href="#">
-                        <i className="fab fa-twitter"></i>
+                        <Icon icon={["fab", "twitter"]} />
                     </a>
-                    <a href="#">
-                        <i className="fab fa-facebook-f"></i>
-                    </a>
+                    {/* <a href="#">
+                        <Icon icon={["fab", "facebook"]} />                    
+                    </a> */}
                 </div>
             </div>
 

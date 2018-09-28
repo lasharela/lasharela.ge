@@ -13,6 +13,18 @@ import Startups from './sections/Startups'
 
 import './assets/styles/main.css';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import {
+  faAward
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(
+  fab,
+  faAward
+)
+
+
 class App extends Component {
   render() {
     return (
