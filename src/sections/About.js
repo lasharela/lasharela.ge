@@ -1,40 +1,36 @@
 import React from 'react'
 import Section from '../components/Section'
 import {FontAwesomeIcon as Icon} from '@fortawesome/react-fontawesome'
+import HtmlParser from 'html-react-parser'
+import {ABOUT} from '../config/content'
 
 export default () => {
     return (
         <Section id="about">
             <div className="my-auto">
                 <h1 className="mb-0">
-                    <span className="pr-3">Lasha</span>
-                    <span className="text-primary">Kava</span>
+                    <span className="pr-3">{ABOUT.name.firstName}</span>
+                    <span className="text-primary">{ABOUT.name.lastName}</span>
                 </h1>
                 <div className="subheading mb-5">
-                    <span>Ocean Pkwy,  Brooklyn, NY</span>
+                    <span>{ABOUT.contact.address}</span>
                     <span className="px-2">·</span>
-                    <span>(317) 585-8468</span> 
+                    <span>{ABOUT.contact.phone}</span> 
                     <span className="px-2">·</span>
-                    <a href="mailto:name@email.com">lasharela@gmail.com</a>
+                    <a href={`mailto:${ABOUT.contact.mail}`}>{ABOUT.contact.mail}</a>
                 </div>
-                <p className="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                <p className="lead mb-5" >{HtmlParser(ABOUT.description)}</p>
                 <div className="social-icons">
-                    <a href="#">
-                        <Icon icon={["fab", "linkedin-in"]} />
-                    </a>
-                    <a href="#">
-                        <Icon icon={["fab", "github"]} />
-                    </a>
-                    <a href="#">
-                        <Icon icon={["fab", "twitter"]} />
-                    </a>
-                    {/* <a href="#">
-                        <Icon icon={["fab", "facebook"]} />                    
-                    </a> */}
+                    {
+                        ABOUT.socialNetworks.map((item, index) => (
+                            <a href={item.url} target="_blank" key={index}>
+                                <Icon icon={item.icon} />
+                             </a>
+                        ))
+                    }
+
                 </div>
             </div>
-
         </Section>
-
     )
 }
