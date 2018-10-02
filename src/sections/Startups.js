@@ -4,8 +4,8 @@ import Section from '../components/Section'
 
 export default () => {
   return (
-    <div>
-      startups
-    </div>
+    <Section id="startups" isVisible={false}>
+      this is startup section
+    </Section>
   )
 }

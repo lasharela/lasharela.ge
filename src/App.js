@@ -29,33 +29,28 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <NavigationPanel />
+        <Container fluid className="p-0">
+        
+          <About />
+          <Separator />
 
-      <NavigationPanel />
-      <Container fluid className="p-0">
-      
-        <About />
-        <Separator />
+          <Experience />
+          <Separator />
 
-        <Experience />
-        <Separator />
+          <Startups  />
+          <Separator />
 
-        <Startups />
-        <Separator />
+          <Development />
+          <Separator />
 
-        <Development />
-        <Separator />
+          <Skills />
+          <Separator />
 
-        <Skills />
-        <Separator />
+          <Interests />
+          <Separator />
 
-        <Interests />
-        <Separator />
-
-
-
-      </Container>
-
-
+        </Container>
       </div>
     );
   }

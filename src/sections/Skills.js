@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '../components/Section'
+import {FontAwesomeIcon as Icon} from '@fortawesome/react-fontawesome'
 
 
 export default () => {
@@ -11,56 +12,56 @@ export default () => {
                 <div className="subheading mb-3">Programming Languages &amp; Tools</div>
                 <ul className="list-inline dev-icons">
                     <li className="list-inline-item">
-                        <i className="fab fa-html5"></i>
+                        <Icon icon={["fab", "html5"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-css3-alt"></i>
+                        <Icon icon={["fab", "css3-alt"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-js-square"></i>
+                        <Icon icon={["fab", "js-square"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-angular"></i>
+                        <Icon icon={["fab", "angular"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-react"></i>
+                        <Icon icon={["fab", "react"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-node-js"></i>
+                        <Icon icon={["fab", "node-js"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-sass"></i>
+                        <Icon icon={["fab", "sass"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-less"></i>
+                        <Icon icon={["fab", "less"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-wordpress"></i>
+                        <Icon icon={["fab", "wordpress"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-gulp"></i>
+                        <Icon icon={["fab", "gulp"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-grunt"></i>
+                        <Icon icon={["fab", "grunt"]} />
                     </li>
                     <li className="list-inline-item">
-                        <i className="fab fa-npm"></i>
+                        <Icon icon={["fab", "npm"]} />
                     </li>
                 </ul>
 
                 <div className="subheading mb-3">Workflow</div>
                 <ul className="fa-ul mb-0">
                     <li>
-                        <i className="fa-li fa fa-check"></i>
+                        <i className="fa-li fa fa-check" />
                         Mobile-First, Responsive Design</li>
                     <li>
-                        <i className="fa-li fa fa-check"></i>
+                        <i className="fa-li fa fa-check" />
                         Cross Browser Testing &amp; Debugging</li>
                     <li>
-                        <i className="fa-li fa fa-check"></i>
+                        <i className="fa-li fa fa-check" />
                         Cross Functional Teams</li>
                     <li>
-                        <i className="fa-li fa fa-check"></i>
+                        <i className="fa-li fa fa-check" />
                         Agile Development &amp; Scrum</li>
                 </ul>
             </div>
