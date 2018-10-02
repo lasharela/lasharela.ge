@@ -1,3 +1,34 @@
+
+// make references to the components by type
+export const SECTIONS = [
+    {
+        component: 'About',
+        id: 'about',
+        menuItemText:'About me'
+    },
+    {
+        component: 'Experience',
+        id: 'experience',
+        menuItemText:'Experience'
+   },
+   {
+        component: 'Projects',
+        id: 'projects',
+        menuItemText:'Startups'
+    },   
+    {
+        component: 'Interests',
+        id: 'interests',
+        menuItemText:'Interests'
+   },
+    {
+        component: 'Skills',
+        id: 'Skills',
+        menuItemText:'Skills'
+   }
+]
+
+
 export const ABOUT = {
     name: {
         firstName:'Lasha',

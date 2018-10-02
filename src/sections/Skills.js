@@ -3,9 +3,9 @@ import Section from '../components/Section'
 import {FontAwesomeIcon as Icon} from '@fortawesome/react-fontawesome'
 
 
-export default () => {
+export default ({section}) => {
     return (
-        <Section id="skills">
+        <Section id={section.id}>
             <div className="my-auto">
                 <h2 className="mb-5">Skills</h2>
 
@@ -52,16 +52,16 @@ export default () => {
                 <div className="subheading mb-3">Workflow</div>
                 <ul className="fa-ul mb-0">
                     <li>
-                        <i className="fa-li fa fa-check" />
+                        <Icon icon={['fas', 'check']} className='fa-li text-primary' />
                         Mobile-First, Responsive Design</li>
                     <li>
-                        <i className="fa-li fa fa-check" />
+                        <Icon icon={['fas', 'check']} className='fa-li text-primary' />
                         Cross Browser Testing &amp; Debugging</li>
                     <li>
-                        <i className="fa-li fa fa-check" />
+                        <Icon icon={['fas', 'check']} className='fa-li text-primary' />
                         Cross Functional Teams</li>
                     <li>
-                        <i className="fa-li fa fa-check" />
+                        <Icon icon={['fas', 'check']} className='fa-li text-primary' />
                         Agile Development &amp; Scrum</li>
                 </ul>
             </div>

@@ -2,9 +2,9 @@ import React from 'react'
 import Section from '../components/Section'
 
 
-export default () => {
+export default ({section}) => {
     return (
-        <Section id="education">
+        <Section id={section.id}>
             <div className="my-auto">
                 <h2 className="mb-5">Education</h2>
 

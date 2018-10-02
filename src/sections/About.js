@@ -4,9 +4,9 @@ import {FontAwesomeIcon as Icon} from '@fortawesome/react-fontawesome'
 import HtmlParser from 'html-react-parser'
 import {ABOUT} from '../config/content'
 
-export default () => {
+export default ({section}) => {
     return (
-        <Section id="about">
+        <Section id={section.id}>
             <div className="my-auto">
                 <h1 className="mb-0">
                     <span className="pr-3">{ABOUT.name.firstName}</span>
@@ -28,7 +28,6 @@ export default () => {
                              </a>
                         ))
                     }
-
                 </div>
             </div>
         </Section>
